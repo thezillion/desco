@@ -1,0 +1,49 @@
+/*
+
+# This CSS file is a part of Desco - the lightweight hover tooltip/describer. Brought to you by thezillion.WordPress.com.
+# Link it to your HTML page using the <link /> tag.
+# Any queries? Visit www.thezillion.co.nr and contact the developer.
+# Coded by Prince Mathew [thezillion.wordpress.com][thezillion.co.nr][facebook.com/thezillion][twitter.com/thezillion]
+
+*/
+
+#tzdesco{
+	-webkit-transition: 500ms opacity;
+	-ms-transition: 500ms opacity;
+	-o-transition: 500ms opacity;
+	-khtml-transition: 500ms opacity;
+	-moz-transition: 500ms opacity;
+	transition: 500ms opacity;
+	top: 0;
+	left: 0;
+	font-size: 15px;
+	color: white;
+	font-family: "Segoe UI";
+	display: none;
+	opacity: 0;
+	max-width: 200px;
+	z-index: 99999999999999999999999999999;
+}
+#tzdesco #tzdescotxtholder{
+	padding: 8px;
+	background-color: black;
+	border-radius: 6px;
+	font-size: 12px;
+}
+#tzdesco #tzdescoarrowholder{
+	height: 7px;
+	overflow: hidden;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAYAAACXU8ZrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAC1JREFUGFdj+P//PwMyZmAAcdHE0BWAFKErhJsCk0SmYQaAFWFTgGwiXgUwhQBVXlSsJODsBAAAAABJRU5ErkJggg==');
+	height: 5px;
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+#tzdesco #tzdescoarrowholder #tzdescoarrow{
+	-webkit-transform: rotate(135deg);
+	height: 100px;
+	width: 100px;
+	background-color: black;
+	display: inline-block;
+	position: relative;
+	top: 20px;
+}

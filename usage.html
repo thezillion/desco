@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel='stylesheet' href='source/desco.thezillion.css' type='text/css' />
+ 		<script src='source/desco.thezillion.js'></script>
+		<style>
+			body { text-align: center; }
+			#boxy {
+				font-family: "Segoe UI", "Calibri", "Arial", sans-serif;
+				display: inline-block;
+				width: 50%;
+				text-align: center;
+				padding: 7px 0;
+				background-color: #EEE;
+			}
+			#imgy {
+				height: 200px;
+				border-radius: 5px;
+			}
+			#posy {
+				position: relative;
+				top: -264px;
+			}
+		</style>
+    </head>
+    <body><br/><br/>
+        <span class='show-desco' id="boxy" alt='Grey grey grey grey'>Hover over this text to see a Desco popup.</span>
+        <br/>
+        <img src="img.jpg" class="show-desco" alt="This image is awesome!" /><br/>
+        <span id="posy">Hover over this image as well</span>
+
+        <script>
+			// Put this code preferably at the end of the document
+			win.addEventListener("load", function(){ desco.makeDesco(); });
+		</script>
+    </body>
+</html>

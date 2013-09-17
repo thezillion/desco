@@ -14,7 +14,8 @@ Usage
 &lt;img src="img.jpg" class="show-desco" alt="This image is awesome!" /&gt;&lt;br/&gt;
 </code>
 
-### JavaScript (To be put at the end of the page)
+### JavaScript
+To be put at the end of the page:
 <code>
 win.addEventListener("load", function(){ desco.makeDesco(); });
 </code>

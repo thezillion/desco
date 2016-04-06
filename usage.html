@@ -31,7 +31,20 @@
 
         <script>
 			// Put this code preferably at the end of the document
-			win.addEventListener("load", function(){ desco.makeDesco(); });
+			win.addEventListener("load", function(){ desco.makeDesco(); 
+			
+				var xhr = new XMLHttpRequest();
+				xhr.addEventListener("readystatechange", function(){
+				if (xhr.status == 200 && xhr.readyState == 4) {
+					console.log(xhr.response);
+				}
+				});
+				xhr.open("POST", "http://www-mec.mec.ac.in/attn/view4stud.php", true);
+				xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				var params = "class=C2A";
+				xhr.send(params);
+				
+			});
 		</script>
     </body>
 </html>
